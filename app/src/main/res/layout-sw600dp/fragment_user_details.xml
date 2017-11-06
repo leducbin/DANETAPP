@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blur_image_dark" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_top_gradient_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gradient_top_bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/user_detail_user_icon_layout_margin_top"
+            android:layout_weight="0.6"
+            android:elevation="1dp">
+
+            <TextView
+                android:id="@+id/userNameTextView"
+                style="@style/Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/hint_user_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_view_large_size" />
+
+            <TextView
+                android:id="@+id/memberShipTextView"
+                style="@style/Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/hint_membership"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/member_ship_renew_button_layout_margin_top"
+            android:background="#40FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#40000000"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/renew_button_layout_padding_top_bottom"
+            android:paddingTop="@dimen/renew_button_layout_padding_top_bottom">
+
+            <TextView
+                android:id="@+id/renewButtonTextView"
+                style="@style/Light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/renew_button_drawable_padding"
+                android:drawableTop="@drawable/renew_icon"
+                android:gravity="center_horizontal"
+                android:text="@string/label_buffet_subscription"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_view_medium_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#40FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cineplexCreditCountTextView"
+                    style="@style/Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_cineplex_credit_count_zero"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_large_size" />
+
+                <TextView
+                    android:id="@+id/cineplexCreditTextView"
+                    style="@style/Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cineplex_credit_text_view_margin_top"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_cineplex_credit"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_medium_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="#40FFFFFF" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/transactionHistoryButton"
+                    style="@style/Light"
+                    android:layout_width="@dimen/login_edit_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginRight="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/signout_button_bg"
+                    android:paddingBottom="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:paddingLeft="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingRight="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingTop="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:text="@string/label_transaction_history"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_medium_large_size" />
+
+                <Button
+                    android:id="@+id/renewBuffetButton"
+                    style="@style/Light"
+                    android:layout_width="@dimen/login_edit_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginRight="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/signout_button_bg"
+                    android:paddingBottom="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:paddingLeft="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingRight="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingTop="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:text="@string/label_renew_buffet_subscription"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_medium_large_size" />
+
+                <Button
+                    android:id="@+id/cineplexButton"
+                    style="@style/Light"
+                    android:layout_width="@dimen/login_edit_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginRight="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/signout_button_bg"
+                    android:paddingBottom="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:paddingLeft="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingRight="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingTop="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:text="@string/label_add_cineplex_credits"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_medium_large_size" />
+
+                <Button
+                    android:id="@+id/voucherButton"
+                    style="@style/Light"
+                    android:layout_width="@dimen/login_edit_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginRight="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/signout_button_bg"
+                    android:paddingBottom="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:paddingLeft="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingRight="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingTop="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:text="@string/label_using_voucher"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_medium_large_size" />
+
+                <Button
+                    android:id="@+id/activateTVButton"
+                    style="@style/Light"
+                    android:layout_width="@dimen/login_edit_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginRight="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/signout_button_bg"
+                    android:paddingBottom="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:paddingLeft="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingRight="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingTop="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:text="@string/label_activate_TV"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_medium_large_size" />
+
+                <Button
+                    android:id="@+id/signOutButton"
+                    style="@style/Light"
+                    android:layout_width="@dimen/login_edit_text_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginRight="@dimen/cineplex_credit_button_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/signout_button_bg"
+                    android:paddingBottom="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:paddingLeft="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingRight="@dimen/cineplex_credit_button_padding_left_right"
+                    android:paddingTop="@dimen/cineplex_credit_button_padding_top_bottom"
+                    android:text="@string/labe_sign_out"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_medium_large_size" />
+
+                <TextView
+                    android:id="@+id/privacyPolicyTextView"
+                    style="@style/Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/privacy_policy_text_view_margin_bottom"
+                    android:padding="@dimen/privacy_policy_text_view_padding"
+                    android:text="@string/label_privacy_policy"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_small_size" />
+
+                <TextView
+                    android:id="@+id/termTextView"
+                    style="@style/Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/privacy_policy_text_view_padding"
+                    android:text="@string/label_term"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_small_size" />
+
+                <TextView
+                    android:id="@+id/helpTextView"
+                    style="@style/Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/privacy_policy_text_view_margin_bottom"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/privacy_policy_text_view_padding"
+                    android:text="@string/label_help"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_small_size" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

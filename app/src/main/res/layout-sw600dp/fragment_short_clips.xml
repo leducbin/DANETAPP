@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/actionBarLayoutShowClips"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_size"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_top_bottom">
+
+
+        <TextView
+            android:id="@+id/showClipHeaderTitleTextView"
+            style="@style/Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="@string/short_clip"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_view_medium_large_size" />
+
+        <ImageButton
+            android:id="@+id/showClipFilterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/movie_back_button_margin_left_right"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/hint_close_button"
+            android:padding="@dimen/movie_back_button_padding"
+            android:src="@drawable/filter_icon" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionBarLayoutShowClips"
+        tools:context="com.movideo.whitelabel.fragments.shortClipsFragment">
+
+        <com.movideo.whitelabel.view.AutoFitRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:columnWidth="@dimen/show_item_width"
+            android:padding="@dimen/show_recycler_view_padding" />
+
+    </FrameLayout>
+</RelativeLayout>

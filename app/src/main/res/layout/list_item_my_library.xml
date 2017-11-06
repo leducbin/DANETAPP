@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/my_library_list_item_width"
+    android:layout_height="@dimen/my_library_list_item_height"
+    android:background="@drawable/border_black"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/imageViewHorizontalListItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/horizontal_list_item_image_width"
+        android:layout_height="@dimen/my_library_list_item_gradient_height"
+        android:layout_alignBottom="@+id/imageViewHorizontalListItem"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gradient_bottom_top" />
+
+    <TextView
+        android:id="@+id/textViewHorizontalListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewHorizontalListItem"
+        android:layout_alignLeft="@+id/imageViewHorizontalListItem"
+        android:layout_alignRight="@+id/imageViewHorizontalListItem"
+        android:layout_alignStart="@+id/imageViewHorizontalListItem"
+        android:layout_marginBottom="@dimen/my_library_list_item_text_bottom_margin"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:hint="@string/hint_product_title"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/my_library_list_item_font_size" />
+
+    <TextView
+        android:id="@+id/textViewRentDue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_library_list_item_rent_due_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent_white_80"
+        android:gravity="center"
+        android:hint="@string/hint_time_left"
+        android:textColor="@color/gray_1"
+        android:textColorHint="@color/gray_1"
+        android:textSize="@dimen/my_library_list_item_rent_due_font_size"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageViewSelectedBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@color/transparent_black_60"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageViewSelected"
+        android:layout_width="@dimen/my_library_list_item_selected_icon_height"
+        android:layout_height="@dimen/my_library_list_item_selected_icon_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/my_library_list_item_selected_icon_left_margin"
+        android:layout_marginTop="@dimen/my_library_list_item_selected_icon_top_margin"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_selected"
+        android:visibility="invisible" />
+
+</RelativeLayout>

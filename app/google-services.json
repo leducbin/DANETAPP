@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "823727380321",
+    "firebase_url": "https://danet-45c17.firebaseio.com",
+    "project_id": "danet-45c17",
+    "storage_bucket": "danet-45c17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823727380321:android:ab90dc5178ef80c6",
+        "android_client_info": {
+          "package_name": "com.movideo.whitelabel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823727380321-rgvflqi7r6bjhpk2eem8l6ld7jad8ep0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoDV9uiTwUSbwZ7anh5Jj0QSNJX0tPE2I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

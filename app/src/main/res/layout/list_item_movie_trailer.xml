@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/movie_trailer_list_item_width" android:layout_height="@dimen/movie_trailer_list_item_height"
+    android:background="@drawable/border_black"
+    android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/imageViewMovieTrailerListItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/movie_trailer_list_item_gradient_height"
+        android:id="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageViewMovieTrailerListItem"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gradient_bottom_top" />
+
+    <TextView
+        android:id="@+id/textViewMovieTrailerListItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/my_library_list_item_text_bottom_margin"
+        android:layout_marginLeft="8dp"
+        android:hint="@string/hint_product_title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/movie_trailer_list_item_font_size"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+</RelativeLayout>

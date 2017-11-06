@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutHorizontalClipsListItem"
+    android:layout_width="@dimen/horizontal_clips_list_item_image_width"
+    android:layout_height="@dimen/horizontal_clips_list_item_image_height"
+    android:background="@drawable/border_green"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <ImageView
+        android:id="@+id/imageViewHorizontalClipsListItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/horizontal_clips_list_item_image_width"
+        android:layout_height="@dimen/horizontal_clips_list_item_gradient_height"
+        android:layout_alignBottom="@+id/imageViewHorizontalClipsListItem"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gradient_bottom_top" />
+
+    <TextView
+        android:id="@+id/textViewHorizontalClipsListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewHorizontalClipsListItem"
+        android:layout_alignLeft="@+id/imageViewHorizontalClipsListItem"
+        android:layout_alignRight="@+id/imageViewHorizontalClipsListItem"
+        android:layout_alignStart="@+id/imageViewHorizontalClipsListItem"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:hint="@string/hint_product_title"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageViewHorizontalClipsListItem"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageViewHorizontalClipsListItem"
+        android:background="@color/transparent_black_50"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textViewHorizontalClipsListItemDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/label_min"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewHorizontalClipsListItemMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_min"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

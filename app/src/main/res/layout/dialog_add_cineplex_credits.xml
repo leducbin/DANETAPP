@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_add_cineplex_width"
+    android:layout_height="@dimen/dialog_add_cineplex_height"
+    android:background="@drawable/add_cineplex_dialog_bg"
+
+    android:paddingTop="@dimen/dialog_add_cineplex_padding_top">
+
+    <TextView
+        style="@style/Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dialog_add_cineplex_padding_left_right"
+        android:paddingRight="@dimen/dialog_add_cineplex_padding_left_right"
+        android:text="@string/dialog_msg_for_add_cineplex"
+        android:textColor="#4F4F4F"
+        android:textSize="@dimen/text_view_medium_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/goToWebsiteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/go_to_website"
+            android:textColor="#3D92F3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D9D9D9" />
+
+        <TextView
+            android:id="@+id/cancelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="#3D92F3" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/movie_toggle_up_layout_padding_left_right"
+        android:paddingRight="@dimen/movie_toggle_up_layout_padding_left_right">
+
+        <ImageView
+            android:id="@+id/seasonListViewSubItemThumbImageView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/expandable_list_view_sub_item_image_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample_test" />
+
+        <ImageButton
+            android:id="@+id/seasonListViewSubItemPlayImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/hint_play_button"
+            android:src="@drawable/play_icon_large" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/seasonListViewSubItemDescTextView"
+        style="@style/Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/expandable_list_view_sub_item_season_clip_desc_margin_top"
+        android:layout_marginTop="@dimen/expandable_list_view_sub_item_season_clip_desc_margin_top"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/movie_toggle_up_layout_padding_left_right"
+        android:paddingRight="@dimen/movie_toggle_up_layout_padding_left_right"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_view_extra_small_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#40FFFFFF" />
+</LinearLayout> 

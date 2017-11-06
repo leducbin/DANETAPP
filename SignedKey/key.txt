@@ -1,0 +1,3 @@
+Using: bhd_android
+Pass1: abcd1234
+Pass2: 1234abcd

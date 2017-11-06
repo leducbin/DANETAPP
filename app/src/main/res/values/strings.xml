@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name">DANET_DEV_BIN</string>
+    <string name="title_activity_splash_screen">Splash Screen</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_product_title">TITLE</string>
+    <string name="hint_product_description">Mô tả</string>
+    <string name="hint_product_genres">Thể loại</string>
+    <string name="hint_product_cast_n_crew">Đoàn làm phim</string>
+    <string name="hint_product_actors">Diễn viên</string>
+    <string name="hint_product_directors">Đạo diễn</string>
+    <string name="hint_product_language">Ngôn ngữ</string>
+    <string name="hint_page_title">TITLE</string>
+    <string name="hint_menu_item">MENU ITEM</string>
+    <string name="hint_time_left">TIME LEFT</string>
+    <string name="hint_search">Tìm kiếm</string>
+    <string name="hint_extra">Mở rộng</string>
+
+    <string name="label_popular">PHỔ BIẾN</string>
+    <string name="label_latest">MỚI NHẤT</string>
+    <string name="label_new_si_fi">NEW SI-FI</string>
+    <string name="label_min">phút</string>
+    <string name="label_menu_header_avod_title">MIỄN PHÍ</string>
+    <string name="label_menu_header_svod_title">PHIM GÓI</string>
+    <string name="label_menu_header_tvod_title">THUÊ PHIM</string>
+    <string name="label_menu_footer_my_library_title">Thư viện</string>
+    <string name="label_select">Chọn</string>
+    <string name="label_my_library">Thư viện</string>
+    <string name="label_select_items">Chọn</string>
+    <string name="label_cancel">Bỏ qua</string>
+    <string name="label_no_search_result">Không tìm thấy phim</string>
+    <string name="label_no_result">Không có kết quả</string>
+    <string name="label_go_to_website">Chuyển tới website</string>
+    <string name="label_accept_credit_pay">Đồng ý</string>
+    <string name="label_subscribe_to_buffet">Đã đăng ký phim gói</string>
+    <string name="label_4k">4K</string>
+    <string name="label_hd">HD</string>
+    <string name="label_sd">SD</string>
+    <string name="label_play">Phát</string>
+    <string name="label_delete">Xóa</string>
+    <string name="label_sign_in_unable">Không thể truy cập</string>
+    <string name="label_ok">OK</string>
+
+    <string name="dialog_msg_take_to_web">Bạn cần vào website để hoàn thành nốt bước này</string>
+    <string name="dialog_msg_prompt_login">Vui lòng đăng nhập để hoàn thành nốt bước này</string>
+    <string name="dialog_msg_rent">Bạn cần thuê trước khi xem</string>
+    <string name="dialog_msg_local_rent">Thanh toán bằng điểm</string>
+    <string name="dialog_msg_delete_confirm">Vụi lòng xác nhận yêu cầu xóa</string>
+    <string name="dialog_msg_wrong_username_password">Vui lòng kiểm tra tên đăng nhập và mật khẩu.</string>
+    <string name="dialog_msg_unauthorized_user">Không được phép truy cập, xin hãy thử cách khác.</string>
+    <string name="dialog_msg_error_occurred">Có lỗi xảy ra, vui lòng quay lại sau.</string>
+    <string name="dialog_msg_network_error_occurred">Có lỗi xảy ra, không có kết nối mạng .</string>
+
+    <string-array name="string_array_my_library_sub_pages">
+        <item>YÊU THÍCH</item>
+        <!--item>WATCH HISTORY</item-->
+        <item>ĐANG THUÊ</item>
+    </string-array>
+
+    <string-array name="string_array_my_library_rent_due_period">
+        <item> PHÚT</item>
+        <item> GIỜ</item>
+        <item> NGÀY</item>
+    </string-array>
+
+    <!-- ImageView/TextView Content description for Login details screen-->
+    <string name="label_sign_in">Đăng nhập</string>
+    <string name="label_sign_in_sign_up">Đăng nhập / Đăng ký</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Mật khẩu</string>
+    <string name="label_or">hoặc</string>
+    <string name="facebook_sign_in">Đăng nhập bằng Facebook</string>
+    <string name="label_forgot_password">Quên mật khẩu?</string>
+
+    <!-- ImageView/TextView Content description for user details screen-->
+    <string name="labe_sign_out">Thoát</string>
+    <string name="label_transaction_history">Lịch sử giao dịch</string>
+    <string name="label_add_cineplex_credits">Nạp điểm</string>
+    <string name="label_using_voucher">Sử dụng mã thẻ DANET</string>
+    <string name="label_activate_TV">Đăng nhập trên TV</string>
+    <string name="label_privacy_policy">Quyền riêng tư</string>
+    <string name="label_term">Điều khoản sử dụng</string>
+    <string name="label_help">Trợ giúp</string>
+    <string name="label_create_account">Chưa có tài khoản? <b>Đăng ký</b></string>
+    <string name="label_buffet_subscription">Chưa đăng ký phim gói</string>
+    <string name="label_renew_buffet_subscription">Đăng ký Phim gói</string>
+    <string name="label_cineplex_credit">Điểm Danet</string>
+    <string name="label_cineplex_credit_count_zero">0</string>
+    <string name="hint_membership">Tài khoản</string>
+    <string name="hint_user_name">Tên</string>
+
+    <!-- ImageView/TextView Content description for Movie details screen-->
+    <string name="hint_backButton">Quay lại</string>
+    <string name="hint_close_button">Đóng</string>
+    <string name="hint_play_button">Phát</string>
+
+    <string name="ant_man">Ant-Man</string>
+    <string name="minutes">2015 (PG) 163 Minutes</string>
+
+    <string name="movie_desc">Armed with the astonishing ability to shrink in scale but increase in strength, con-man Scott Lang must embrace his inner-hero and help his mentor, Dr. Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world."</string>
+
+    <string name="genres">Thể loại</string>
+    <string name="genres_text">Adventure, Space, Sci-fi</string>
+
+    <string name="cast_crew">Đoàn làm phim</string>
+    <string name="cast_crew_actor">Diễn viên - Ryan Potter, Scott Adsit, JamieChung</string>
+    <string name="cast_crew_director">Đạo diễn - Scott Adsit, JamieChung</string>
+
+    <string name="language">Ngôn ngữ</string>
+    <string name="english">English</string>
+
+    <string name="trailer">TRAILER</string>
+    <string name="wishlist">THÍCH</string>
+    <string name="share">CHIA SẺ</string>
+
+    <string name="related">LIÊN QUAN</string>
+
+    <string name="daysleft">6 DAYS LEFT</string>
+
+    <!-- ImageView/TextView Show Clip description for Short clips and movie trailer screen-->
+    <string name="short_clip">PHIM NGẮN</string>
+
+    <!-- facebook login -->
+    <!-- Movideo has to provide the proper facebook app id -->
+    <!--<string name="facebook_app_id">1492147231091427</string>-->
+    <!-- <string name="facebook_app_id">599709506813735</string> -->
+    <string name="facebook_app_id">1095409150519750</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_clip_details_activtiy">ClipDetailsActivtiy</string>
+
+
+    <!-- Clip Details Screen -->
+    <string name="clip_head_title">Tom Cruise And Jimmy Fallon Have An Epic Lip Sync Battle</string>
+    <string name="clip_duation_date">29 July 2015 - 7min </string>
+    <string name="clip_description">Sorry Jimmy Fallon, but you just got beat at your own game– by Tom Cruise! The two squared off in an epic game of Lip Sync Battle and, honestly, Tom basically crushed his competitor!</string>
+    <string name="clip_bottom_text">TRENDING</string>
+
+    <!-- show details screen -->
+    <string name="expandable_list_item_header_name">Phần 1</string>
+    <string name="season">Phần</string>
+
+    <!-- Add cineplex dialog screen -->
+    <string name="dialog_msg_for_add_cineplex">Bạn cần vào website để hoàn thành nốt bước này</string>
+    <string name="go_to_website">Vào web</string>
+    <string name="cancel">Bỏ qua</string>
+
+    <!--filter screen -->
+    <string name="apply_filter">Áp dụng</string>
+    <string name="filter">LỌC</string>
+    <string name="country">NƯỚC</string>
+    <string name="year">NĂM</string>
+    <string name="sort_by">LỌC THEO</string>
+
+    <string name="release_date">Ngày phát hành</string>
+    <string name="a_z">A-Z</string>
+    <string name="z_a">Z-A</string>
+    <string name="reset">Thiết lập lại</string>
+
+    <!--constants values/toast messages-->
+    <string name="network_error">Vui lòng kiểm tra kết nối internet!</string>
+    <string name="response_error">Có lỗi xảy ra!</string>
+
+    <string name="email_and_password_blank">Vui lòng nhập email và mật khẩu</string>
+    <string name="email_address_blank">Vui lòng nhập địa chỉ email</string>
+    <string name="email_address_invalid">Vui lòng nhập chính xác địa chỉ email</string>
+    <string name="password_blank">Vui lòng nhập mật khẩu</string>
+
+    <string name="user_logged_in_msg">Đăng nhập thành công</string>
+    <string name="forgot_password_msg">Thiết lập lại mật khẩu thành công. Vui lòng kiểm tra email</string>
+    <string name="added_favorite_items">Đã đưa vào danh sách yêu thích</string>
+    <string name="exits_favorite_items">Phim này đã có trong danh sách yêu thích</string>
+
+    <string name="com_facebook_loginview_log_in_button">Đăng nhập bằng Facebook</string>
+    <string name="facebook_login_cancelled">Đăng nhập đã bị bỏ qua</string>
+    <string name="facebook_login_failed">Đăng nhập thất bại. Vui lòng thử lại.</string>
+    <string name="user_not_exits">Không có người dùng này</string>
+    <string name="un_authorised_user">Không được phép truy cập</string>
+
+    <string name="un_authorised_exception_code">401</string>
+    <string name="not_found_exception_code">404</string>
+
+    <string name="user_info">user-info</string>
+    <string name="user_is_logged_in">isUserLoggedIn</string>
+    <string name="title_activity_show_video_demo">ShowVideoDemo</string>
+    <string name="current_br">Cur: - kbps</string>
+    <string name="default_video_res">Res: - x -</string>
+    <string name="empty_text">empty</string>
+    <string name="lvwidget_default_time_str">00:00</string>
+    <string name="live">"   Live   "</string>
+
+    <!--Barcode Reader-->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+</resources>

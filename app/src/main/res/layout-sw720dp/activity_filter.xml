@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_image_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black_50">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/page_top_gradient_height"
+            android:src="@drawable/gradient_top_bottom" />
+
+        <RelativeLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_size">
+
+            <TextView
+                android:id="@+id/headerTitleTextView"
+                style="@style/Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="@string/filter"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_view_medium_large_size" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/applyFilterButton"
+            style="@style/Light"
+            android:layout_width="@dimen/apply_filter_button_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/apply_filter_button_margin_top_bottom"
+            android:layout_marginLeft="@dimen/apply_filter_button_margin_left_right"
+            android:layout_marginRight="@dimen/apply_filter_button_margin_left_right"
+            android:layout_marginTop="@dimen/apply_filter_button_margin_top_bottom"
+            android:background="@drawable/signout_button_bg"
+            android:paddingBottom="@dimen/apply_filter_button_padding_top_bottom"
+            android:paddingLeft="@dimen/apply_filter_button_padding_left_right"
+            android:paddingRight="@dimen/apply_filter_button_padding_left_right"
+            android:paddingTop="@dimen/apply_filter_button_padding_top_bottom"
+            android:text="@string/apply_filter"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/country_text_size" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/applyFilterButton"
+            android:layout_below="@id/headerLayout"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/country_text_margin_bottom"
+                    android:layout_marginLeft="@dimen/country_text_margin_left_right"
+                    android:layout_marginRight="@dimen/country_text_margin_left_right"
+                    android:layout_marginTop="@dimen/country_text_margin_top"
+                    android:singleLine="true"
+                    android:text="@string/genres"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/country_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40FFFFFF" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/country_list_height">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/genresRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/country_list_height"
+                        android:clipToPadding="false"
+                        android:paddingBottom="@dimen/apply_filter_button_padding_top_bottom"
+                        android:paddingLeft="@dimen/list_item_padding_country_left_right"
+                        android:paddingRight="@dimen/list_item_padding_country_left_right"
+                        android:paddingTop="@dimen/apply_filter_button_padding_top_bottom" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarGenres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:indeterminateDrawable="@drawable/progress"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40FFFFFF" />
+
+                <TextView
+                    style="@style/Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/country_text_margin_bottom"
+                    android:layout_marginLeft="@dimen/country_text_margin_left_right"
+                    android:layout_marginRight="@dimen/country_text_margin_left_right"
+                    android:layout_marginTop="@dimen/year_text_margin_top"
+                    android:singleLine="true"
+                    android:text="@string/country"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/country_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40FFFFFF" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/country_list_height">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/countryRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/country_list_height"
+                        android:clipToPadding="false"
+                        android:paddingBottom="@dimen/apply_filter_button_padding_top_bottom"
+                        android:paddingLeft="@dimen/list_item_padding_country_left_right"
+                        android:paddingRight="@dimen/list_item_padding_country_left_right"
+                        android:paddingTop="@dimen/apply_filter_button_padding_top_bottom" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBarCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:indeterminateDrawable="@drawable/progress"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40FFFFFF" />
+
+                <TextView
+                    style="@style/Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/country_text_margin_bottom"
+                    android:layout_marginLeft="@dimen/country_text_margin_left_right"
+                    android:layout_marginRight="@dimen/country_text_margin_left_right"
+                    android:layout_marginTop="@dimen/year_text_margin_top"
+                    android:singleLine="true"
+                    android:text="@string/year"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/country_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40FFFFFF" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/yearRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/country_list_height"
+                    android:clipToPadding="false"
+                    android:paddingBottom="@dimen/apply_filter_button_padding_top_bottom"
+                    android:paddingLeft="@dimen/list_item_padding_country_left_right"
+                    android:paddingRight="@dimen/list_item_padding_country_left_right"
+                    android:paddingTop="@dimen/apply_filter_button_padding_top_bottom" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#40FFFFFF" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/country_text_margin_bottom"
+                    android:layout_marginLeft="@dimen/country_text_margin_left_right"
+                    android:layout_marginRight="@dimen/country_text_margin_left_right"
+                    android:layout_marginTop="@dimen/year_text_margin_top"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/Bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:text="@string/sort_by"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/country_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/sort_by_layout_width"
+                        android:layout_height="@dimen/sort_by_layout_height"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/apply_filter_button_margin_left_right"
+                        android:layout_marginRight="@dimen/apply_filter_button_margin_left_right"
+                        android:background="@drawable/sort_by_round_bg"
+                        android:orientation="horizontal"
+                        android:padding="1dp">
+
+                        <TextView
+                            android:id="@+id/releaseDateTextView"
+                            style="@style/Light"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/release_date_bg_selector"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/release_date"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_view_extra_small_size" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#40FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/a_zTextView"
+                            style="@style/Light"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/a_z_bg"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/a_z"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_view_extra_small_size" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="#40FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/z_aTextView"
+                            style="@style/Light"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/z_a_bg"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/z_a"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_view_extra_small_size" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/resetTextView"
+                    style="@style/Light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/reset_text_margin_top"
+                    android:drawablePadding="@dimen/reset_image_padding"
+                    android:drawableTop="@drawable/reset_icon"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/reset"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_view_extra_small_size" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/filter_gredient_left_right_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/gradient_left_right" />
+
+    <ImageView
+        android:layout_width="@dimen/filter_gredient_left_right_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/gradient_right_left" />
+
+    <ImageButton
+        android:id="@+id/closeImageButton"
+        android:layout_width="@dimen/close_button_width"
+        android:layout_height="@dimen/close_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/close_button_right_margin"
+        android:layout_marginTop="@dimen/close_button_top_margin"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hint_close_button"
+        android:padding="@dimen/close_button_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close_button" />
+</RelativeLayout>

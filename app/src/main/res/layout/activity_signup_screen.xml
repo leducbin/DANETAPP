@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur_image_dark">
+
+    <ImageButton
+        android:id="@+id/closeImageButton"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/close_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/close_button_right_margin"
+        android:layout_marginTop="@dimen/close_button_top_margin"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hint_close_button"
+        android:padding="@dimen/close_button_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close_button" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/close_button_right_margin"
+        android:layout_marginTop="@dimen/close_button_top_margin"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hint_close_button"
+        android:padding="@dimen/close_button_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close_button"
+        android:id="@+id/closeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/login_main_layout_padding_top_bottom"
+            android:paddingLeft="@dimen/login_main_layout_padding_left_right"
+            android:paddingRight="@dimen/login_main_layout_padding_left_right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="332dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/danet_logo_login"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:text="Đăng ký tài khoản"
+                android:layout_width="match_parent"
+                android:id="@+id/singupTextView"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollViewSignup"
+                android:layout_alignTop="@id/singupTextView"
+                android:layout_alignLeft="@id/singupTextView"
+                android:layout_alignRight="@id/singupTextView"
+                android:layout_above="@+id/singupTextView"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/firstNameEditText"
+                            style="@style/Light"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/edit_text_bg"
+                            android:hint="Tên"
+                            android:inputType="textPersonName"
+                            android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                            android:paddingLeft="@dimen/login_edit_text_padding_left_right"
+                            android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                            android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textCursorDrawable="@drawable/edit_text_white_cursor"
+                            android:textSize="18sp"
+                            android:layout_marginTop="@dimen/login_edit_text_padding_top_bottom"
+                            android:layout_marginRight="7.5dp" />
+
+                        <EditText
+                            android:id="@+id/lastNameEditText"
+                            style="@style/Light"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/edit_text_bg"
+                            android:hint="Họ"
+                            android:inputType="textPersonName"
+                            android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                            android:paddingLeft="@dimen/login_edit_text_padding_left_right"
+                            android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                            android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textCursorDrawable="@drawable/edit_text_white_cursor"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="7.5dp"
+                            android:layout_marginTop="@dimen/login_edit_text_padding_top_bottom"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/emailEditText"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_bg"
+                        android:hint="Địa chỉ email"
+                        android:inputType="textEmailAddress"
+                        android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                        android:paddingLeft="@dimen/login_edit_text_padding_left_right"
+                        android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                        android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textCursorDrawable="@drawable/edit_text_white_cursor"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:id="@+id/phoneEditText"
+                        style="@style/Light"
+                        android:background="@drawable/edit_text_bg"
+                        android:hint="Điện thoại"
+                        android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                        android:paddingLeft="@dimen/login_edit_text_padding_left_right"
+                        android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                        android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textCursorDrawable="@drawable/edit_text_white_cursor"
+                        android:textSize="18sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:ems="10"
+                        android:id="@+id/birthdayEditText"
+                        style="@style/Light"
+                        android:background="@drawable/edit_text_bg"
+                        android:hint="Ngày sinh (ngày/tháng/năm)"
+                        android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                        android:paddingLeft="@dimen/login_edit_text_padding_left_right"
+                        android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                        android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textCursorDrawable="@drawable/edit_text_white_cursor"
+                        android:textSize="18sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:focusable="false"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/passwordEditText"
+                        style="@style/Light"
+                        android:background="@drawable/edit_text_bg"
+                        android:hint="Mật khẩu (ít nhất 6 ký tự)"
+                        android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                        android:paddingLeft="@dimen/login_edit_text_padding_left_right"
+                        android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                        android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textCursorDrawable="@drawable/edit_text_white_cursor"
+                        android:textSize="18sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/passwordReenterEditText"
+                        style="@style/Light"
+                        android:background="@drawable/edit_text_bg"
+                        android:hint="Nhập lại mật khẩu"
+                        android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                        android:paddingLeft="@dimen/login_edit_text_padding_left_right"
+                        android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                        android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textCursorDrawable="@drawable/edit_text_white_cursor"
+                        android:textSize="18sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"/>
+
+                    <CheckBox
+                        android:text="Tôi đồng ý với các điều khoản sử dụng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkBox"
+                        style="@style/Light"
+                        android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                        android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                        android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                        android:textColor="#9aca3c"
+                        android:textColorHint="@android:color/white"
+                        android:textCursorDrawable="@drawable/edit_text_white_cursor"
+                        android:textSize="14sp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:text="Đăng ký"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/buttonSignUp"
+                        style="@style/Light"
+                        android:background="@drawable/login_button_bg"
+                        android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                        android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                        android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

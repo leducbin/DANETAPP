@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutHomePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.movideo.whitelabel.fragment.HomePageFragment">
+
+    <ImageView
+        android:id="@+id/imageViewHomePageBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@color/transparent_black_50" />
+
+    <com.movideo.whitelabel.view.ParallaxScrollView
+        android:id="@+id/parallaxScrollViewHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nestedScrollingEnabled="true"
+        android:paddingBottom="@dimen/horizontal_list_layout_bottom_margin"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewHomeBlankHeader"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_page_view_pager_height"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_name"
+                android:src="@android:color/transparent" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerHomeImageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_page_view_pager_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:overScrollMode="never" />
+
+            <ImageView
+                android:id="@+id/imageViewHomeMiddleGradient"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_page_middle_gradient_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/viewPageIndicatorHome"
+                android:layout_marginTop="@dimen/home_page_middle_gradient_top_margin"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/gradient_vertical_middle" />
+
+            <com.movideo.whitelabel.widget.CircleIndicator
+                android:id="@+id/viewPageIndicatorHome"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/page_indicator_circle_height"
+                android:layout_alignBottom="@+id/viewPagerHomeImageSlider"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/viewPagerHomeImageSlider"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.movideo.whitelabel.view.ParallaxScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_top_gradient_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gradient_top_bottom" />
+
+    <TextView
+        android:id="@+id/textViewHomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/home_page_title_top_margin"
+        android:gravity="center"
+        android:hint="@string/hint_page_title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/home_page_title_text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_search"
+        android:id="@+id/searchImageView"
+        android:layout_alignTop="@+id/textViewHomeTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/menu_icon_green"
+        android:padding="@dimen/activity_main_menu_button_padding"
+        android:id="@+id/searchButton"
+        android:background="@android:color/transparent"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:layout_alignBaseline="@+id/textViewHomeTitle"
+        android:layout_alignBottom="@+id/textViewHomeTitle"
+        android:layout_alignEnd="@+id/searchImageView" />
+
+</RelativeLayout>

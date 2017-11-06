@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textViewHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/horizontal_list_layout_left_margin"
+        android:layout_marginTop="@dimen/horizontal_list_layout_text_top_margin"
+        android:hint="@string/hint_product_title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewHorizontalList"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontal_clips_list_item_image_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewHorizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/horizontal_list_layout_bottom_margin"
+        android:layout_marginTop="@dimen/horizontal_list_layout_top_margin"
+        android:clipToPadding="false"
+        android:paddingLeft="@dimen/horizontal_list_layout_left_margin" />
+
+</merge>

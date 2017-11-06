@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_image_dark"
+        android:id="@+id/viewSwitcher">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/login_main_layout_padding_top_bottom"
+            android:paddingLeft="@dimen/login_main_layout_padding_left_right"
+            android:paddingRight="@dimen/login_main_layout_padding_left_right"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_main_menu_button_left_margin"
+            android:layout_marginRight="@dimen/activity_main_menu_button_left_margin">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/danet_logo_login"
+                android:id="@+id/imageView28"
+                />
+            <TextView
+                android:text="Quên mật khẩu"
+                android:layout_width="match_parent"
+                android:id="@+id/singupTextView"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                style="@style/Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Địa chỉ email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                android:paddingLeft="@dimen/login_edit_text_padding_left_right"
+                android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textCursorDrawable="@drawable/edit_text_white_cursor"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+            <Button
+                android:text="Gửi yêu cầu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sendResetPasswordButton"
+                style="@style/Light"
+                android:background="@drawable/login_button_bg"
+                android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                android:paddingRight="@dimen/login_edit_text_padding_left_right"
+                android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_main_menu_button_left_margin"
+            android:layout_marginRight="@dimen/activity_main_menu_button_left_margin"
+            android:paddingBottom="@dimen/login_main_layout_padding_top_bottom"
+            android:paddingLeft="@dimen/login_main_layout_padding_left_right"
+            android:paddingRight="@dimen/login_main_layout_padding_left_right">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email"
+                android:id="@+id/imageEmailView"
+                />
+            <TextView
+                android:text="Vui lòng kiểm tra hòm thư"
+                android:layout_width="match_parent"
+                android:id="@+id/alertEmailTextView"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+            <TextView
+                android:text="Chúng tôi đã gửi thông tin mật khẩu cho bạn vào hòm thư ab@ch.com, thư sẽ tới trong khoảng 5 phút."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/alertDescriptionTextView"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:text="Đồng ý"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/okButton"
+                style="@style/Light"
+                android:background="@drawable/enable_button_bg"
+                android:paddingBottom="@dimen/login_edit_text_padding_top_bottom"
+                android:paddingTop="@dimen/login_edit_text_padding_top_bottom"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+    </ViewSwitcher>
+
+    <ImageButton
+        android:id="@+id/closeImageButton"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/close_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/close_button_right_margin"
+        android:layout_marginTop="@dimen/close_button_top_margin"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hint_close_button"
+        android:padding="@dimen/close_button_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close_button" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/close_button_right_margin"
+        android:layout_marginTop="@dimen/close_button_top_margin"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hint_close_button"
+        android:padding="@dimen/close_button_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_close_button"
+        android:id="@+id/closeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>

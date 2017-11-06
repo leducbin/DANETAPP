@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+
+    <color name="black">#000000</color>
+    <color name="blue_dodger">#FF4096F6</color>
+    <color name="blue_medium">#FF157EFB</color>
+    <color name="blue_dark">#103140</color>
+    <color name="gray_1">#FF404040</color>
+    <color name="green_light">#FF81B843</color>
+    <color name="green_light_transparent_50">#7f81b843</color>
+    <color name="green_medium">#FF31AA4A</color>
+    <color name="green_dark">#FF405D20</color>
+    <color name="red_tomato">#FFEE3939</color>
+    <color name="red_dark">#FF47262A</color>
+    <color name="transparent_gray_50">#7F818181</color>
+    <color name="transparent_black_20">#33000000</color>
+    <color name="transparent_black_30">#4C000000</color>
+    <color name="transparent_black_40">#66000000</color>
+    <color name="transparent_black_50">#7F000000</color>
+    <color name="transparent_black_60">#99000000</color>
+    <color name="transparent_black_70">#B2000000</color>
+    <color name="transparent_black_80">#CC000000</color>
+    <color name="transparent_black_90">#E5000000</color>
+    <color name="transparent_dark_blue_20">#331D1D26</color>
+    <color name="transparent_white_20">#33FFFFFF</color>
+    <color name="transparent_white_30">#4CFFFFFF</color>
+    <color name="transparent_white_40">#66FFFFFF</color>
+    <color name="transparent_white_50">#7FFFFFFF</color>
+    <color name="transparent_white_60">#99FFFFFF</color>
+    <color name="transparent_white_70">#B2FFFFFF</color>
+    <color name="transparent_white_80">#CCFFFFFF</color>
+    <color name="transparent_white_90">#E5FFFFFF</color>
+    <color name="transparent_gray_white_30">#4CF3F3F3</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--View colors in movie details screen-->
+    <color name="daysleft_grey">#FF404040</color>
+
+    <!-- showclip screen view colors -->
+    <color name="show_duration_layout_background_color">#32000000</color>
+
+    <!--Squadeo player -->
+    <color name="overlay_background">#66444444</color>
+    <color name="color_null">@null</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_darkgray">#FF555555</color>
+    <color name="text_default">#FFCCCCCC</color>
+    <color name="highlight_file">#FFFFFFFF</color>
+    <color name="lowlight_file">#FF999999</color>
+    <color name="hlsdl_speed">#FFc8d200</color>
+    <color name="green">#FF00A800</color>
+    <color name="red">#FFA80000</color>
+    <color name="color_ddarkgray">#D0303030</color>
+
+</resources>

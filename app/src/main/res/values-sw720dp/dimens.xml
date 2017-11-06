@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_logo_width">240.5dp</dimen>
+    <dimen name="splash_logo_height">52dp</dimen>
+    <dimen name="splash_logo_top_margin">253dp</dimen>
+    <dimen name="splash_spinner_height">76dp</dimen>
+    <dimen name="splash_spinner_width">76dp</dimen>
+
+    <dimen name="activity_main_menu_button_left_margin">8dp</dimen>
+    <dimen name="activity_main_menu_button_top_margin">31dp</dimen>
+    <dimen name="activity_main_menu_button_width">54.7dp</dimen>
+    <dimen name="activity_main_menu_button_height">45dp</dimen>
+    <dimen name="activity_main_menu_button_padding">10dp</dimen>
+
+    <dimen name="parallax_view_header_height">720dp</dimen>
+    <dimen name="page_top_gradient_height">117dp</dimen>
+    <dimen name="menu_drawer_width">362dp</dimen>
+
+    <dimen name="horizontal_list_item_image_width">210dp</dimen>
+    <dimen name="horizontal_list_item_image_height">315dp</dimen>
+    <dimen name="horizontal_list_item_gradient_height">70dp</dimen>
+    <dimen name="horizontal_list_item_title_font_size">14sp</dimen>
+
+    <dimen name="horizontal_clips_list_item_image_width">372dp</dimen>
+    <dimen name="horizontal_clips_list_item_image_height">214.6dp</dimen>
+    <dimen name="horizontal_clips_list_item_gradient_height">70dp</dimen>
+
+    <dimen name="home_page_view_pager_height">556dp</dimen>
+    <dimen name="home_page_middle_gradient_height">300dp</dimen>
+    <dimen name="home_page_middle_gradient_top_margin">-150dp</dimen>
+    <dimen name="home_page_title_top_margin">37dp</dimen>
+    <dimen name="home_page_title_text_size">24sp</dimen>
+
+    <dimen name="horizontal_list_layout_left_margin">26dp</dimen>
+    <dimen name="horizontal_list_layout_right_margin">26dp</dimen>
+    <dimen name="horizontal_list_layout_top_margin">10dp</dimen>
+    <dimen name="horizontal_list_layout_bottom_margin">15dp</dimen>
+    <dimen name="horizontal_list_layout_divider_width">14dp</dimen>
+    <dimen name="horizontal_list_layout_text_top_margin">22dp</dimen>
+
+    <dimen name="my_library_list_item_height">225dp</dimen>
+    <dimen name="my_library_list_item_width">150dp</dimen>
+    <dimen name="my_library_list_item_gradient_height">64dp</dimen>
+    <dimen name="my_library_list_item_text_bottom_margin">8dp</dimen>
+    <dimen name="my_library_list_item_font_size">14sp</dimen>
+    <dimen name="my_library_list_item_selected_icon_height">39dp</dimen>
+    <dimen name="my_library_list_item_selected_icon_left_margin">10.5dp</dimen>
+    <dimen name="my_library_list_item_selected_icon_top_margin">10.3dp</dimen>
+    <dimen name="my_library_list_item_rent_due_height">31.6dp</dimen>
+    <dimen name="my_library_list_item_rent_due_font_size">14sp</dimen>
+
+    <dimen name="my_library_title_top_margin">35dp</dimen>
+    <dimen name="my_library_title_font_size">26sp</dimen>
+    <dimen name="my_library_tab_font_size">16sp</dimen>
+    <dimen name="my_library_tab_indicator_width">400dp</dimen>
+    <dimen name="my_library_tab_indicator_top_margin">89dp</dimen>
+    <dimen name="my_library_select_indicator_right_margin">19dp</dimen>
+    <dimen name="my_library_delete_height">51dp</dimen>
+
+    <dimen name="movie_trailer_grid_top_padding">117dp</dimen>
+    <dimen name="movie_trailer_grid_bottom_padding">30dp</dimen>
+    <dimen name="movie_trailer_grid_left_padding">40dp</dimen>
+    <dimen name="movie_trailer_grid_right_padding">40dp</dimen>
+    <dimen name="movie_trailer_filter_button_right_margin">13dp</dimen>
+    <dimen name="movie_trailer_filter_button_top_margin">34dp</dimen>
+    <dimen name="movie_trailer_filter_button_width">25dp</dimen>
+    <dimen name="movie_trailer_filter_button_height">20dp</dimen>
+    <dimen name="movie_trailer_list_item_height">225dp</dimen>
+    <dimen name="movie_trailer_list_item_width">150dp</dimen>
+    <dimen name="movie_trailer_list_item_clip_height">158dp</dimen>
+    <dimen name="movie_trailer_list_item_clip_width">281dp</dimen>
+    <dimen name="movie_trailer_list_item_gradient_height">40dp</dimen>
+    <dimen name="movie_trailer_list_item_gradient_clip_height">40dp</dimen>
+    <dimen name="movie_trailer_list_item_font_size">16sp</dimen>
+    <dimen name="movie_trailer_list_item_clip_font_size">16sp</dimen>
+
+    <dimen name="close_button_width">44dp</dimen>
+    <dimen name="close_button_height">44dp</dimen>
+    <dimen name="close_button_padding">7dp</dimen>
+    <dimen name="close_button_right_margin">21dp</dimen>
+    <dimen name="close_button_top_margin">20dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--View size/padding/margin in movie details screen-->
+    <dimen name="text_view_large_size">30sp</dimen>
+    <dimen name="text_view_medium_large_size">24sp</dimen>
+    <dimen name="text_view_medium_size">18sp</dimen>
+    <dimen name="text_view_small_size">14sp</dimen>
+    <dimen name="text_view_extra_small_size">13sp</dimen>
+    <dimen name="text_view_extra_small_size_genres_cast_lang">14sp</dimen>
+    <dimen name="text_button_trailer_wishlist">16sp</dimen>
+
+    <dimen name="daysleft_left_right_padding">10dp</dimen>
+    <dimen name="daysleft_top_bottom_padding">5dp</dimen>
+
+    <dimen name="movie_toggle_up_layout_height">125dp</dimen>
+    <dimen name="movie_toggle_up_layout_padding_left_right">15dp</dimen>
+    <dimen name="movie_toggle_up_layout_padding_top_bottom">15dp</dimen>
+
+    <dimen name="movie_time_text_view_margin_top">10dp</dimen>
+
+    <dimen name="toggle_up_down_arrow_width">34dp</dimen>
+    <dimen name="toggle_up_down_arrow_margin_top">5dp</dimen>
+
+    <dimen name="movie_toggle_down_layout_top_bottom">5dp</dimen>
+    <dimen name="movie_toggle_down_layout_left">52dp</dimen>
+    <dimen name="movie_toggle_down_layout_right">58dp</dimen>
+
+    <dimen name="movie_genres_header_text_view_margin_top">20dp</dimen>
+
+    <dimen name="movie_trailer_button_layout_margin_top">10dp</dimen>
+    <dimen name="movie_trailer_button_layout_padding">31dp</dimen>
+    <dimen name="movie_trailer_button_drawable_padding">5dp</dimen>
+    <dimen name="movie_trailer_button_drawable_margin_right">70dp</dimen>
+
+    <dimen name="related_movie_recycler_view_top_bottom">20dp</dimen>
+    <dimen name="related_movie_recycler_view_height">370dp</dimen>
+
+    <dimen name="movie_back_button_padding">15dp</dimen>
+    <dimen name="movie_back_button_margin_left_right">20dp</dimen>
+
+    <!--action bar size screen-->
+    <dimen name="action_bar_size">56dp</dimen>
+    <!--view size/padding/margin for login screen-->
+    <dimen name="login_close_image_button_margin_right">20dp</dimen>
+    <dimen name="login_close_image_button_padding">10dp</dimen>
+    <dimen name="login_main_layout_padding_left_right">25dp</dimen>
+    <dimen name="login_main_layout_padding_top_bottom">30dp</dimen>
+    <dimen name="login_edit_text_padding_left_right">21dp</dimen>
+    <dimen name="login_edit_text_padding_top_bottom">15dp</dimen>
+    <dimen name="login_edit_text_margin_top_bottom">20dp</dimen>
+    <dimen name="login_text_view_or_margin_top_bottom">20dp</dimen>
+    <dimen name="login_text_view_forgot_margin_top">55dp</dimen>
+    <dimen name="login_text_view_forgot_padding">10dp</dimen>
+    <dimen name="login_edit_text_width">390dp</dimen>
+    <dimen name="login_edit_text_height">60dp</dimen>
+
+    <!--view size/padding/margin for user details screen-->
+    <dimen name="user_detail_user_icon_layout_margin_top">75dp</dimen>
+    <dimen name="user_detail_user_icon_width">90dp</dimen>
+    <dimen name="user_detail_user_icon_height">90dp</dimen>
+
+    <dimen name="member_ship_text_view_margin_top">5dp</dimen>
+    <dimen name="member_ship_renew_button_layout_margin_top">40dp</dimen>
+
+    <dimen name="renew_button_layout_padding_top_bottom">25dp</dimen>
+    <dimen name="renew_button_drawable_padding">10dp</dimen>
+
+    <dimen name="cineplex_credit_text_view_margin_top">10dp</dimen>
+    <dimen name="cineplex_credit_button_margin">30dp</dimen>
+    <dimen name="cineplex_credit_button_padding_top_bottom">15dp</dimen>
+    <dimen name="cineplex_credit_button_padding_left_right">18dp</dimen>
+
+    <dimen name="privacy_policy_text_view_margin_bottom">25dp</dimen>
+    <dimen name="privacy_policy_text_view_margin_top">100dp</dimen>
+    <dimen name="privacy_policy_text_view_padding">5dp</dimen>
+
+    <!--set related video layout-->
+    <dimen name="list_item_imageview_width">220dp</dimen>
+    <dimen name="list_item_imageview_height">330dp</dimen>
+    <dimen name="list_item_textview_margin">10dp</dimen>
+    <dimen name="list_item_textview_width">124dp</dimen>
+    <dimen name="list_item_gradient_height">40dp</dimen>
+
+
+    <!--set related video recycleview space-->
+    <dimen name="horizontal_list_space">15dp</dimen>
+
+    <!--set alpha dimen for all screens-->
+    <item name="zero_point_zero" format="float" type="dimen">0.0</item>
+    <item name="zero_point_one" format="float" type="dimen">0.1</item>
+    <item name="zero_point_two" format="float" type="dimen">0.2</item>
+    <item name="zero_point_three" format="float" type="dimen">0.3</item>
+    <item name="zero_point_four" format="float" type="dimen">0.4</item>
+    <item name="zero_point_five" format="float" type="dimen">0.5</item>
+    <item name="zero_point_zix" format="float" type="dimen">0.6</item>
+    <item name="zero_point_seven" format="float" type="dimen">0.7</item>
+    <item name="zero_point_eight" format="float" type="dimen">0.8</item>
+    <item name="zero_point_nine" format="float" type="dimen">0.9</item>
+    <item name="one_point_zero" format="float" type="dimen">1.0</item>
+
+
+    <!--- showclips related -->
+    <dimen name="show_item_margin">14dp</dimen>
+    <dimen name="show_item_padding">18dp</dimen>
+    <dimen name="show_item_width">182dp</dimen>
+    <dimen name="show_item_height">106dp</dimen>
+    <dimen name="show_recycler_view_margin">8dp</dimen>
+
+
+    <dimen name="show_duration_layout_width">40dp</dimen>
+    <dimen name="show_duration_layout_height">20dp</dimen>
+    <dimen name="show_duration_text_size">12sp</dimen>
+    <dimen name="show_duration_layout_margin">1dp</dimen>
+
+    <!-- <dimen name="show_title_layout_width">70dp</dimen>
+     <dimen name="show_title_layout_height">12dp</dimen>-->
+    <dimen name="show_title_text_size">13sp</dimen>
+    <dimen name="show_title_layout_margin_left">8dp</dimen>
+    <dimen name="show_title_layout_margin_bottom">8dp</dimen>
+    <dimen name="show_header_title_text_size">20sp</dimen>
+
+
+    <!-- Clip Details Screen -->
+    <dimen name="clip_image_hieght">477.2dp</dimen>
+    <dimen name="clip_play_icon_height_width">60dp</dimen>
+    <dimen name="clip_head_title_size">26sp</dimen>
+    <dimen name="clip_duation_date_size">14sp</dimen>
+    <dimen name="clip_description_size">13sp</dimen>
+    <dimen name="clip_bottom_text_size">20sp</dimen>
+    <dimen name="clip_description_margin_top">20dp</dimen>
+    <dimen name="clip_text_margin_left">20dp</dimen>
+    <dimen name="clip_text_padding_left_right">15dp</dimen>
+    <dimen name="clip_bottom_text_margin_top">30dp</dimen>
+    <dimen name="clip_recycle_view_height">205dp</dimen>
+
+    <!--filter screen -->
+    <dimen name="apply_filter_button_width">414dp</dimen>
+    <dimen name="apply_filter_button_margin_left_right">30dp</dimen>
+    <dimen name="apply_filter_button_margin_top_bottom">30dp</dimen>
+    <dimen name="apply_filter_button_padding_left_right">20dp</dimen>
+    <dimen name="apply_filter_button_padding_top_bottom">18dp</dimen>
+    <dimen name="filter_header_title_text_size">20sp</dimen>
+    <dimen name="country_text_margin_left_right">99dp</dimen>
+    <dimen name="country_text_margin_top">30dp</dimen>
+    <dimen name="country_text_margin_bottom">20dp</dimen>
+    <dimen name="country_list_height">58dp</dimen>
+    <dimen name="year_text_margin_top">56dp</dimen>
+    <dimen name="sort_by_layout_height">30dp</dimen>
+    <dimen name="sort_by_layout_width">375dp</dimen>
+    <dimen name="reset_text_margin_top">40dp</dimen>
+    <dimen name="reset_image_padding">10dp</dimen>
+    <dimen name="country_text_size">20sp</dimen>
+    <dimen name="list_item_space_country">42dp</dimen>
+    <dimen name="list_item_padding_country_left_right">100dp</dimen>
+
+    <dimen name="filter_gredient_left_right_width">100dp</dimen>
+
+    <!--movie details screen tablet-->
+    <dimen name="movie_poster_small_width">230dp</dimen>
+    <dimen name="movie_poster_small_height">345dp</dimen>
+    <dimen name="movie_poster_layout_padding">1dp</dimen>
+    <dimen name="movie_poster_layout_margit_bottom">3dp</dimen>
+
+    <dimen name="movie_title_layout_margin_left">322dp</dimen>
+    <dimen name="movie_title_layout_margin_right">42dp</dimen>
+
+    <dimen name="movie_title_layout_trailer_button_padding_left">35dp</dimen>
+    <dimen name="movie_title_layout_trailer_button_padding_right">5dp</dimen>
+    <dimen name="movie_title_tablet_margin_top">27dp</dimen>
+
+    <dimen name="movie_tablet_poster_height">720dp</dimen>
+    <dimen name="movie_tablet_poster_layout_height">680dp</dimen>
+
+    <!--clip details screen tablet-->
+    <dimen name="clip_tablet_poster_margin_left_right">87dp</dimen>
+    <dimen name="clip_tablet_list_margin_top">40dp</dimen>
+
+    <!--show details screen tablet-->
+    <dimen name="show_tablet_season_margin_top">15dp</dimen>
+    <dimen name="show_tablet_seasons_layout_height">254.6dp</dimen>
+
+    <dimen name="show_tablet_season_list_item_width">344dp</dimen>
+    <dimen name="show_tablet_seasons_list_item_height">198dp</dimen>
+
+    <!--new text sizes added -->
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_16_2">16.2sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+
+</resources>

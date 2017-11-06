@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.movideo.whitelabel.fragment.MyLibraryPageFragment">
+
+    <ImageView
+        android:id="@+id/imageViewMyLibraryBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blur_image_dark" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerMyLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_top_gradient_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gradient_top_bottom" />
+
+    <TextView
+        android:id="@+id/textViewMyLibraryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my_library_title_top_margin"
+        android:gravity="center"
+        android:text="@string/label_my_library"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/my_library_title_font_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewMyLibrarySelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewMyLibraryTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/my_library_select_indicator_right_margin"
+        android:gravity="center"
+        android:hint="@string/hint_page_title"
+        android:text="@string/label_select"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_indicator_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my_library_tab_indicator_top_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent_dark_blue_20"
+        android:id="@+id/layoutMyLibraryTabIndicator">
+
+        <com.movideo.whitelabel.view.viewpagerindicator.TabPageIndicator
+            android:id="@+id/tabIndicatorMyLibrary"
+            android:layout_width="@dimen/my_library_tab_indicator_width"
+            android:layout_height="@dimen/tab_indicator_height"
+            android:nestedScrollingEnabled="true"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="4dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:foregroundGravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_library_delete_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/layoutMyLibraryDelete"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView4"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/trash_icon"
+            android:padding="10dp"
+            android:background="@drawable/gradient_delete"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

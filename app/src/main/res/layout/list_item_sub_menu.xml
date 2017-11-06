@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_list_item_normal_item_height"
+    android:background="@color/transparent_black_40"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewListItemSubMenulTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="12dp"
+        android:gravity="left|center_vertical"
+        android:hint="@string/hint_menu_item"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

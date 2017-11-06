@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewMovieBgBlur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@color/transparent_black_50" />
+
+
+    <com.movideo.whitelabel.view.ParallaxScrollView
+        android:id="@+id/scrollViewMovieDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nestedScrollingEnabled="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/moviePlayButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/movieFullImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/parallax_view_header_height"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/page_top_gradient_height"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/gradient_bottom_top_70" />
+
+                <ImageButton
+                    android:id="@+id/moviePlayImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/hint_play_button"
+                    android:src="@drawable/play_icon_large" />
+
+                <TextView
+                    android:id="@+id/daysLeftTextView"
+                    style="@style/Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:alpha="@dimen/zero_point_eight"
+                    android:background="@android:color/white"
+                    android:paddingBottom="@dimen/daysleft_top_bottom_padding"
+                    android:paddingLeft="@dimen/daysleft_left_right_padding"
+                    android:paddingRight="@dimen/daysleft_left_right_padding"
+                    android:paddingTop="@dimen/daysleft_top_bottom_padding"
+                    android:singleLine="true"
+                    android:text="@string/daysleft"
+                    android:textColor="@color/daysleft_grey"
+                    android:textSize="@dimen/text_view_small_size" />
+
+                <ImageView
+                    android:id="@+id/movieSmallImageViewPoster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_black_50">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/page_top_gradient_height"
+                    android:src="@drawable/gradient_top_bottom" />
+
+                <LinearLayout
+                    android:id="@+id/movieToggleUpLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/movie_toggle_up_layout_height"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/movie_toggle_up_layout_padding_left_right"
+                    android:paddingRight="@dimen/movie_toggle_up_layout_padding_left_right"
+                    android:paddingTop="@dimen/movie_toggle_up_layout_padding_top_bottom">
+
+                    <TextView
+                        android:id="@+id/movieTitleTextView"
+                        style="@style/Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/hint_product_title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_view_large_size" />
+
+
+                    <TextView
+                        android:id="@+id/movieTimeTextView"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/movie_time_text_view_margin_top"
+                        android:singleLine="true"
+                        android:text="@string/minutes"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_view_small_size" />
+
+                    <ToggleButton
+                        android:id="@+id/toggleUpDownArrow"
+                        style="@style/Widget.AppCompat.Button.Small"
+                        android:layout_width="@dimen/toggle_up_down_arrow_width"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/toggle_up_down_arrow_margin_top"
+                        android:background="@android:color/transparent"
+                        android:button="@drawable/arrow_up_down_toggle"
+                        android:checked="true"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/movieToggleDownLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/movieToggleUpLayout"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/movie_toggle_down_layout_top_bottom"
+                    android:paddingTop="@dimen/movie_toggle_down_layout_top_bottom">
+
+                    <TextView
+                        android:id="@+id/movieDescTextView"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_product_description"
+                        android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                        android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_view_extra_small_size" />
+
+                    <TextView
+                        android:id="@+id/movieGenresHeaderTextView"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/movie_genres_header_text_view_margin_top"
+                        android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                        android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                        android:text="@string/genres"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_view_extra_small_size_genres_cast_lang" />
+
+                    <TextView
+                        android:id="@+id/movieGenresTextView"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_product_genres"
+                        android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                        android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_view_extra_small_size_genres_cast_lang" />
+
+                    <TextView
+                        android:id="@+id/movieCastCrewHeaderTextView"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/movie_genres_header_text_view_margin_top"
+                        android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                        android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                        android:text="@string/cast_crew"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_view_extra_small_size_genres_cast_lang" />
+
+                    <TextView
+                        android:id="@+id/movieCastCrewActorTextView"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_product_actors"
+                        android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                        android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_view_extra_small_size_genres_cast_lang" />
+
+                    <TextView
+                        android:id="@+id/movieCastCrewDirectorTextView"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_product_directors"
+                        android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                        android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_view_extra_small_size_genres_cast_lang" />
+
+                    <TextView
+                        android:id="@+id/movieLangHeaderTextView"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/movie_genres_header_text_view_margin_top"
+                        android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                        android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                        android:text="@string/language"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_view_extra_small_size_genres_cast_lang" />
+
+                    <TextView
+                        android:id="@+id/movieLangTextView"
+                        style="@style/Light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_product_language"
+                        android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                        android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="@dimen/text_view_extra_small_size_genres_cast_lang" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/movie_trailer_button_layout_margin_top"
+                        android:background="@color/transparent_black_50"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/movie_trailer_button_layout_padding"
+                        android:paddingRight="@dimen/movie_trailer_button_layout_padding"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/moviePlayTrailerButton"
+                            style="@style/Regular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/play_icon_small"
+                            android:drawablePadding="@dimen/movie_trailer_button_drawable_padding"
+                            android:gravity="left|center_vertical"
+                            android:paddingBottom="@dimen/movie_trailer_wishlist_button_layout_padding_top_btm"
+                            android:paddingTop="@dimen/movie_trailer_wishlist_button_layout_padding_top_btm"
+                            android:text="@string/trailer"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_button_trailer_wishlist"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="10dp" />
+
+                        <Button
+                            android:id="@+id/movieWishListButton"
+                            style="@style/Regular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/wishlist_add"
+                            android:drawablePadding="@dimen/movie_trailer_button_drawable_padding"
+                            android:gravity="left|center_vertical"
+                            android:paddingBottom="@dimen/movie_trailer_wishlist_button_layout_padding_top_btm"
+                            android:paddingTop="@dimen/movie_trailer_wishlist_button_layout_padding_top_btm"
+                            android:tag="add"
+                            android:text="@string/wishlist"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_button_trailer_wishlist" />
+
+                        <Button
+                            android:id="@+id/movieShareButton"
+                            style="@style/Regular"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:background="@android:color/transparent"
+                            android:drawableLeft="@drawable/shares"
+                            android:drawablePadding="@dimen/movie_trailer_button_drawable_padding"
+                            android:gravity="left|center_vertical"
+                            android:paddingBottom="@dimen/movie_trailer_wishlist_button_layout_padding_top_btm"
+                            android:paddingTop="@dimen/movie_trailer_wishlist_button_layout_padding_top_btm"
+                            android:tag="add"
+                            android:text="@string/share"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_button_trailer_wishlist"
+                            android:layout_marginRight="25dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/variants_border"
+                        android:orientation="horizontal"
+                        android:padding="1dp" android:visibility="gone">
+
+                        <ToggleButton
+                            android:id="@+id/buttonMovieDetailsSD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/variant_bg_selector"
+                            android:checked="false"
+                            android:textColor="@color/toggle_color"
+                            android:textOff="@string/label_sd"
+                            android:textOn="@string/label_sd"
+                            android:textSize="14sp"
+                            android:visibility="gone"/>
+
+                        <ToggleButton
+                            android:id="@+id/buttonMovieDetailsHD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.5dp"
+                            android:background="@drawable/variant_bg_selector"
+                            android:textColor="@color/toggle_color"
+                            android:textOff="@string/label_hd"
+                            android:textOn="@string/label_hd"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+
+                        <ToggleButton
+                            android:id="@+id/buttonMovieDetails4K"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0.5dp"
+                            android:background="@drawable/variant_bg_selector"
+                            android:textColor="@color/toggle_color"
+                            android:textOff="@string/label_4k"
+                            android:textOn="@string/label_4k"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/movieRelatedHeaderTextView"
+                        style="@style/Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                        android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                        android:paddingTop="@dimen/related_movie_recycler_view_top_bottom"
+                        android:text="@string/related"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_16_2" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/related_movie_recycler_view_height">
+
+                        <ProgressBar
+                            android:id="@+id/progressBarRelated"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="@dimen/related_movie_recycler_view_top_bottom"
+                            android:indeterminate="false"
+                            android:indeterminateDrawable="@drawable/progress"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/relatedMovieRecyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/related_movie_recycler_view_height"
+                            android:clipToPadding="false"
+                            android:paddingBottom="@dimen/related_movie_recycler_view_top_bottom"
+                            android:paddingLeft="@dimen/movie_toggle_down_layout_left"
+                            android:paddingRight="@dimen/movie_toggle_down_layout_right"
+                            android:paddingTop="@dimen/related_movie_recycler_view_top_bottom" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.movideo.whitelabel.view.ParallaxScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_top_gradient_height"
+        android:background="@drawable/gradient_top_bottom">
+
+        <RelativeLayout
+            android:id="@+id/actionBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_size">
+
+            <TextView
+                android:id="@+id/headerTitleTextView"
+                style="@style/Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:singleLine="true"
+                android:text="@string/hint_page_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_view_medium_size" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/closeImageButton"
+        android:layout_width="@dimen/close_button_width"
+        android:layout_height="@dimen/close_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/close_button_right_margin"
+        android:layout_marginTop="@dimen/close_button_top_margin"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hint_close_button"
+        android:padding="@dimen/close_button_padding"
+        android:src="@drawable/icon_close_button"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/hint_close_button"
+        android:padding="@dimen/close_button_padding"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/closeButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+</RelativeLayout>

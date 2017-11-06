@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/camera_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/scan_border_tablet"/>
+
+    <Button
+        android:id="@+id/activateButton"
+        style="@style/Light"
+        android:layout_width="@dimen/login_edit_text_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="@dimen/cineplex_credit_button_margin"
+        android:layout_marginRight="@dimen/cineplex_credit_button_margin"
+        android:layout_marginTop="@dimen/cineplex_credit_button_margin"
+        android:background="@drawable/signout_button_bg"
+        android:paddingBottom="@dimen/cineplex_credit_button_padding_top_bottom"
+        android:paddingLeft="@dimen/cineplex_credit_button_padding_left_right"
+        android:paddingRight="@dimen/cineplex_credit_button_padding_left_right"
+        android:paddingTop="@dimen/cineplex_credit_button_padding_top_bottom"
+        android:text="Nhập mã bằng tay"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_view_medium_size"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="my_library_list_item_height">285dp</dimen>
+    <dimen name="my_library_list_item_width">190dp</dimen>
+
+    <dimen name="movie_trailer_list_item_height">285dp</dimen>
+    <dimen name="movie_trailer_list_item_width">190dp</dimen>
+
+    <!--movie details screen tablet-->
+    <dimen name="movie_poster_small_width">260dp</dimen>
+    <dimen name="movie_poster_small_height">390dp</dimen>
+</resources>

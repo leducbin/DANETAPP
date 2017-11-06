@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="default_title_indicator_footer_color">#FFFFFFFF</color>
+    <dimen name="default_title_indicator_footer_line_height">0dp</dimen>
+    <integer name="default_title_indicator_footer_indicator_style">2</integer>
+    <dimen name="default_title_indicator_footer_indicator_height">10dp</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">0dp</dimen>
+    <dimen name="default_title_indicator_footer_padding">0dp</dimen>
+    <integer name="default_title_indicator_line_position">0</integer>
+    <dimen name="default_title_indicator_text_size">15sp</dimen>
+</resources>

@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.movideo.whitelabel.fragment.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageViewSearchBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blur_image_dark" />
+
+    <ListView
+        android:id="@+id/listViewSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:divider="@color/transparent_white_20"
+        android:dividerHeight="1dp"
+        android:paddingBottom="@dimen/search_list_bottom_padding"
+        android:paddingLeft="@dimen/search_list_left_padding"
+        android:paddingRight="@dimen/search_list_right_padding"
+        android:paddingTop="@dimen/search_list_top_padding" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gradient_top_bottom_dark" />
+
+    <RelativeLayout
+        android:id="@+id/layoutSearchTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_title_bar_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="17dp"
+            android:layout_marginLeft="@dimen/search_icon_left_margin"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_search" />
+
+        <EditText
+            android:id="@+id/editTextSearchInput"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_text_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/search_text_left_margin"
+            android:layout_marginRight="@dimen/search_text_right_margin"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSearch"
+            android:inputType="textAutoComplete"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/transparent_white_60"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageViewSearchClear"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="17dp"
+            android:layout_marginRight="@dimen/search_clear_icon_right_margin"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icon_cancel" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_no_search_result"
+        android:id="@+id/textViewSearchNoResult"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="120dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarSearchBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:indeterminateDrawable="@drawable/progress"/>
+
+</RelativeLayout>

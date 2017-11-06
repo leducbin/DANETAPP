@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/expandable_list_view_group_header_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/movie_toggle_up_layout_padding_left_right"
+    android:paddingRight="@dimen/movie_toggle_up_layout_padding_left_right">
+
+    <TextView
+        android:id="@+id/seasonListViewItemTextView"
+        style="@style/Light"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/movie_toggle_up_layout_padding_left_right"
+        android:singleLine="true"
+        android:text="@string/expandable_list_item_header_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_view_medium_size" />
+
+
+    <ToggleButton
+        android:id="@+id/seasonListViewItemToggleButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="@dimen/toggle_up_down_arrow_width"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/expandable_list_view_group_header_toggle_button_margin_right"
+        android:background="@android:color/transparent"
+        android:button="@drawable/arrow_up_down_toggle"
+        android:checked="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textOff=""
+        android:textOn="" />
+
+    <ImageButton
+        android:id="@+id/seasonListViewItemPlayIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:paddingBottom="@dimen/movie_toggle_up_layout_padding_left_right"
+        android:paddingTop="@dimen/movie_toggle_up_layout_padding_left_right"
+        android:src="@drawable/play_icon_small" />
+</LinearLayout>

@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="tabPageIndicatorStyle">@style/TabPageIndicator</item>
+
+        <item name="colorControlNormal">@color/transparent_white_50</item>
+        <item name="colorControlActivated">@color/transparent_white_80</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <!--Regular (default):-->
+    <style name="Regular">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Italic:-->
+    <style name="Italic">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!--Bold:-->
+    <style name="Bold">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Bold-italic:-->
+    <style name="BoldItalic">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <!--Light:-->
+    <style name="Light">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--Light-italic:-->
+    <style name="LightItalic">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!--Thin :-->
+    <style name="Thin">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--Thin-italic :-->
+    <style name="ThinItalic">
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!--Condensed regular:-->
+    <style name="CondensedRegular">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--Condensed italic:-->
+    <style name="CondensedItalic">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <!--Condensed bold:-->
+    <style name="CondensedBold">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Condensed bold-italic:-->
+    <style name="CondensedBoldItalic">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold|italic</item>
+    </style>
+
+    <style name="TabPageIndicator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/my_library_tab_font_size</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:paddingLeft">@dimen/tab_indicator_padding</item>
+        <item name="android:paddingRight">@dimen/tab_indicator_padding</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="footerLineHeight">5dp</item>
+        <item name="footerIndicatorStyle">triangle</item>
+        <item name="footerIndicatorUnderlinePadding">0dp</item>
+        <item name="footerPadding">5dp</item>
+        <item name="linePosition">bottom</item>
+        <item name="footerColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/blur_image_dark"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="157dp">
+
+            <TextView
+                android:text="NẠP ĐIỂM THUÊ PHIM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:id="@+id/textView"
+                android:textSize="30sp"
+                android:textStyle="normal|bold"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:text="Hãy trải nghiệm rạp chiếu phim Danet Cineplex, với các bộ phim bom tấn vừa ra rạp mới nhất của Hollywood, Việt Nam và Châu Á.  Dịch vụ Thuê phim cho phép bạn: Đăng ký 4 thiết bị (Máy tính, Điện thoại, Máy tính bảng, và Smart TV sắp ra mắt) và cùng lúc xem trên 2 thiết bị, thuê phim trong vòng 48 tiếng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="62dp"
+                android:id="@+id/textView4"
+                android:textSize="12sp"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:layout_alignStart="@+id/textView"
+                android:layout_alignEnd="@+id/textView"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/ListButtonTVOD" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

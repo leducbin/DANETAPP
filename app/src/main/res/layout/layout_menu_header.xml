@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_header_height"
+    android:orientation="vertical"
+    android:id="@+id/linearLayoutMenuHeader"
+    android:layout_alignParentTop="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_list_item_header_height"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:id="@+id/layoutMenuHeaderAVOD">
+
+        <ImageView
+            android:id="@+id/imageViewMenuHeaderAVODIndicator"
+            android:layout_width="@dimen/menu_list_item_header_indicator_image_width"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@color/green_medium" />
+
+        <TextView
+            android:id="@+id/textViewMenuHeaderAVODTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="31dp"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_menu_item"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="24sp"
+            android:text="@string/label_menu_header_avod_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_list_item_header_height"
+        android:orientation="horizontal"
+        android:id="@+id/layoutMenuHeaderSVOD">
+
+        <ImageView
+            android:id="@+id/imageViewMenuHeaderSVODIndicator"
+            android:layout_width="@dimen/menu_list_item_header_indicator_image_width"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@color/blue_dodger" />
+
+        <TextView
+            android:id="@+id/textViewMenuHeaderSVODTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="31dp"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_menu_item"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="24sp"
+            android:text="@string/label_menu_header_svod_title" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_list_item_header_height"
+        android:orientation="horizontal"
+        android:id="@+id/layoutMenuHeaderTVOD">
+
+        <ImageView
+            android:id="@+id/imageViewMenuHeaderTVODIndicator"
+            android:layout_width="@dimen/menu_list_item_header_indicator_image_width"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:src="@color/red_tomato" />
+        <TextView
+            android:id="@+id/textViewMenuHeaderTVODTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="31dp"
+            android:gravity="left|center_vertical"
+            android:hint="@string/hint_menu_item"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="24sp"
+            android:text="@string/label_menu_header_tvod_title" />
+    </LinearLayout>
+</LinearLayout>

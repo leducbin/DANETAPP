@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.movideo.whitelabel.fragment.MovieTrailersFragment">
+
+    <ImageView
+        android:id="@+id/imageViewMovieTrailersBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blur_image_dark" />
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridViewMovieTrailer"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clipToPadding="false"
+        android:numColumns="3"
+        android:paddingTop="@dimen/movie_trailer_grid_top_padding"
+        android:paddingRight="@dimen/movie_trailer_grid_right_padding"
+        android:paddingBottom="@dimen/movie_trailer_grid_bottom_padding"
+        android:paddingLeft="@dimen/movie_trailer_grid_left_padding"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_top_gradient_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/gradient_top_bottom" />
+
+    <TextView
+        android:id="@+id/textViewMovieTrailersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/my_library_title_top_margin"
+        android:gravity="center"
+        android:hint="@string/hint_page_title"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/my_library_title_font_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewMovieTrailerFilter"
+        android:layout_width="@dimen/movie_trailer_filter_button_width"
+        android:layout_height="@dimen/movie_trailer_filter_button_height"
+        android:layout_marginTop="@dimen/movie_trailer_filter_button_top_margin"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon_filter_green"
+        android:layout_marginRight="@dimen/movie_trailer_filter_button_right_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarMovieTrailerBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminateDrawable="@drawable/progress"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_no_result"
+        android:id="@+id/textViewNoResults"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="120dp" />
+
+</RelativeLayout>

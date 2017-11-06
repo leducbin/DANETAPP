@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.movideo.whitelabel.MainActivity"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:id="@+id/frame_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="@dimen/menu_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/menu_bg_green">
+
+        <ExpandableListView
+            android:id="@+id/left_drawer_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeLayoutMenuFooter"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="start"
+            android:childDivider="@color/black"
+            android:choiceMode="singleChoice"
+            android:divider="@color/transparent_white_20"
+            android:dividerHeight="@dimen/menu_list_item_separator_height"
+            android:groupIndicator="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutMenuFooter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_footer_height"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:id="@+id/linearLayoutFooter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageViewMenuFooterFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:src="@color/transparent_white_20" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--Menu chính-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<include-->
+            <!--android:id="@+id/include_menu_footer"-->
+            <!--layout="@layout/layout_menu_footer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp" />-->
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="26dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_icon_green"
+            android:padding="@dimen/activity_main_menu_button_padding"
+            android:id="@+id/buttonViewIcon"
+            android:background="@android:color/transparent"
+            android:layout_width="60dp" />
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="@dimen/activity_main_menu_button_width"
+            android:layout_height="@dimen/activity_main_menu_button_height"
+            android:layout_marginLeft="@dimen/activity_main_menu_button_left_margin"
+            android:layout_marginTop="@dimen/activity_main_menu_button_top_margin"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/menu_icon_green"
+            android:padding="@dimen/activity_main_menu_button_padding" />
+
+    </FrameLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
